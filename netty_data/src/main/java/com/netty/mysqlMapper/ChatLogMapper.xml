@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值需要设置为和dao层的类相对应 -->
+<mapper namespace="com.netty.dao.ChatLogDao">
+	<resultMap type="com.netty.entity.ChatLog" id="chatLogResultMap">
+		<result property="chatlog_pk" column="chatlog_pk" />
+		<result property="chatcontent" column="chatcontent" />
+		<result property="chattime" column="chattime" />
+		<result property="isRead" column="isRead" />
+		<association property="user_number" javaType="com.netty.entity.User">
+			<result column="user_number" property="user_number" />
+		</association>
+		<association property="friend_number" javaType="com.netty.entity.User">
+			<result column="user_number" property="user_number" />
+		</association>		
+
+		<!-- private String chatlog_pk; private String user_number; private String 
+			friend_number; private String chatcontent; private Date chattime; private 
+			boolean isRead; -->
+	</resultMap>
+
+</mapper>

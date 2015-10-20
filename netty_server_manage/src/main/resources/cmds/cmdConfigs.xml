@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmds>
+	<cmd id="ucenter_login">
+		<code>0x00A40001</code>
+		<package>com.netty.process.UCProcess.LoginProcess</package>
+		<desc>登录</desc>
+	</cmd>
+</cmds>

@@ -1,0 +1,278 @@
+[D][22:17:25]Root WebApplicationContext: initialization started
+[D][22:17:25]Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[D][22:17:25]Adding [servletContextInitParams] PropertySource with lowest search precedence
+[D][22:17:25]Adding [jndiProperties] PropertySource with lowest search precedence
+[D][22:17:25]Adding [systemProperties] PropertySource with lowest search precedence
+[D][22:17:25]Adding [systemEnvironment] PropertySource with lowest search precedence
+[D][22:17:25]Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+[D][22:17:25]Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+[D][22:17:25]Refreshing Root WebApplicationContext: startup date [Fri Oct 09 22:17:25 CST 2015]; root of context hierarchy
+[D][22:17:25]Adding [systemProperties] PropertySource with lowest search precedence
+[D][22:17:25]Adding [systemEnvironment] PropertySource with lowest search precedence
+[D][22:17:25]Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[D][22:17:26]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[D][22:17:26]Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+[D][22:17:26]Loading schema mappings from [META-INF/spring.schemas]
+[D][22:17:26]Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd}
+[D][22:17:26]Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.1.xsd
+[D][22:17:26]Found XML schema [http://www.springframework.org/schema/context/spring-context-3.1.xsd] in classpath: org/springframework/context/config/spring-context-3.1.xsd
+[D][22:17:26]Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.1.xsd
+[D][22:17:26]Loading bean definitions
+[D][22:17:26]Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+[D][22:17:26]Adding [systemProperties] PropertySource with lowest search precedence
+[D][22:17:26]Adding [systemEnvironment] PropertySource with lowest search precedence
+[D][22:17:26]Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[D][22:17:26]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[D][22:17:26]Looking for matching resources in directory tree [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_server_manage/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\process] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_server_manage/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\security] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_server_manage/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_server_manage/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\utils] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_server_manage/target/classes/com/netty/**/*.class]
+[D][22:17:26]Looking for matching resources in directory tree [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_rpc/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\command] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_rpc/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\pkg] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_rpc/target/classes/com/netty/**/*.class]
+[D][22:17:26]Looking for matching resources in directory tree [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\entity] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/**/*.class]
+[D][22:17:26]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\impl] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/**/*.class]
+[D][22:17:26]Resolved location pattern [classpath*:com/netty/**/*.class] to resources [file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\process\LoginProcess.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\security\SecureChatKeyStore.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\security\SecureChatSslContextFactory.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\security\SecureChatTrustManagerFactory$1.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\security\SecureChatTrustManagerFactory.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\EntryTest.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyEntry.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyServer$1.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyServer.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyServerHandler.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyServerInitializer.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyServerProxy.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\NettyServerRequestHandler.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\ServerTest$1.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\ServerTest.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\server\test.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_server_manage\target\classes\com\netty\utils\ApplicationContextUtil.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\command\Command$CMD.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\command\Command$USER.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\command\Command.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\command\Role.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\pkg\MessagePkg.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_rpc\target\classes\com\netty\pkg\Pkg.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\ChatLogDao.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\FriendDao.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\UserDao.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\entity\ChatLog.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\entity\Friend.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\entity\User.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\FriendService.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\impl\FriendServiceImpl.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\impl\UserServiceImpl.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\UserService.class]]
+[D][22:17:26]Identified candidate component class: file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\impl\FriendServiceImpl.class]
+[D][22:17:26]Identified candidate component class: file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\service\impl\UserServiceImpl.class]
+[D][22:17:26]Neither XML 'id' nor 'name' specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+[D][22:17:26]Loaded 11 bean definitions from location pattern [classpath:spring-mybatis.xml]
+[D][22:17:26]Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@5ce33a58: defining beans [friendServiceImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager]; root of factory hierarchy
+[D][22:17:26]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[D][22:17:26]Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[D][22:17:26]Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+[D][22:17:26]Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[D][22:17:27]Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[D][22:17:27]Creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[D][22:17:27]Eagerly caching bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' to allow for resolving potential circular references
+[D][22:17:27]Invoking afterPropertiesSet() on bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[D][22:17:27]Finished creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[D][22:17:27]Adding [systemProperties] PropertySource with lowest search precedence
+[D][22:17:27]Adding [systemEnvironment] PropertySource with lowest search precedence
+[D][22:17:27]Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+[D][22:17:27]Looking for matching resources in directory tree [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao]
+[D][22:17:27]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/dao/**/*.class]
+[D][22:17:27]Resolved location pattern [classpath*:com/netty/dao/**/*.class] to resources [file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\ChatLogDao.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\FriendDao.class], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\UserDao.class]]
+[D][22:17:27]Ignored because not a concrete top-level class: file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\ChatLogDao.class]
+[D][22:17:27]Identified candidate component class: file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\FriendDao.class]
+[D][22:17:27]Identified candidate component class: file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\dao\UserDao.class]
+[D][22:17:27]Creating MapperFactoryBean with name 'friendDao' and 'com.netty.dao.FriendDao' mapperInterface
+[D][22:17:27]Creating MapperFactoryBean with name 'userDao' and 'com.netty.dao.UserDao' mapperInterface
+[D][22:17:27]Creating shared instance of singleton bean 'propertyConfigurer'
+[D][22:17:27]Creating instance of bean 'propertyConfigurer'
+[D][22:17:27]Eagerly caching bean 'propertyConfigurer' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'propertyConfigurer'
+[D][22:17:27]Loading properties file from class path resource [db.properties]
+[D][22:17:27]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[D][22:17:27]Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[D][22:17:27]Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[D][22:17:27]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[D][22:17:27]Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[D][22:17:27]Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[D][22:17:27]Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[D][22:17:27]Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[D][22:17:27]Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[D][22:17:27]Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+[D][22:17:27]Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+[D][22:17:27]Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+[D][22:17:27]Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+[D][22:17:27]Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+[D][22:17:27]Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+[D][22:17:27]Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@29876704]
+[D][22:17:27]Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@7cc586a8]
+[D][22:17:27]Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@388ffbc2]
+[D][22:17:27]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5ce33a58: defining beans [friendServiceImpl,userServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,propertyConfigurer,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,friendDao,userDao]; root of factory hierarchy
+[D][22:17:27]Creating shared instance of singleton bean 'friendServiceImpl'
+[D][22:17:27]Creating instance of bean 'friendServiceImpl'
+[D][22:17:27]Registered injected element on class [com.netty.service.impl.FriendServiceImpl]: AutowiredFieldElement for public com.netty.dao.FriendDao com.netty.service.impl.FriendServiceImpl.friendDao
+[D][22:17:27]Eagerly caching bean 'friendServiceImpl' to allow for resolving potential circular references
+[D][22:17:27]Processing injected method of bean 'friendServiceImpl': AutowiredFieldElement for public com.netty.dao.FriendDao com.netty.service.impl.FriendServiceImpl.friendDao
+[D][22:17:27]Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[D][22:17:27]Creating shared instance of singleton bean 'friendDao'
+[D][22:17:27]Creating instance of bean 'friendDao'
+[D][22:17:27]Eagerly caching bean 'friendDao' to allow for resolving potential circular references
+[D][22:17:27]Creating shared instance of singleton bean 'sqlSessionFactory'
+[D][22:17:27]Creating instance of bean 'sqlSessionFactory'
+[D][22:17:27]Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+[D][22:17:27]Creating shared instance of singleton bean 'dataSource'
+[D][22:17:27]Creating instance of bean 'dataSource'
+[D][22:17:27]Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+[D][22:17:27]Finished creating instance of bean 'dataSource'
+[D][22:17:27]Looking for matching resources in directory tree [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper]
+[D][22:17:27]Searching directory [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper] for files matching pattern [G:/WorkedCompany/yanhuaProject/src/netty/netty_data/target/classes/com/netty/mysqlMapper/*.xml]
+[D][22:17:27]Resolved location pattern [classpath:com/netty/mysqlMapper/*.xml] to resources [file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper\ChatLogMapper.xml], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper\FriendMapper.xml], file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper\UserMapper.xml]]
+[D][22:17:27]Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+[D][22:17:27]Property 'configLocation' not specified, using default MyBatis Configuration
+[D][22:17:28]Parsed mapper file: 'file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper\ChatLogMapper.xml]'
+[D][22:17:28]Parsed mapper file: 'file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper\FriendMapper.xml]'
+[D][22:17:28]Parsed mapper file: 'file [G:\WorkedCompany\yanhuaProject\src\netty\netty_data\target\classes\com\netty\mysqlMapper\UserMapper.xml]'
+[D][22:17:28]Finished creating instance of bean 'sqlSessionFactory'
+[D][22:17:28]Invoking afterPropertiesSet() on bean with name 'friendDao'
+[D][22:17:28]Finished creating instance of bean 'friendDao'
+[D][22:17:28]Creating shared instance of singleton bean 'userDao'
+[D][22:17:28]Creating instance of bean 'userDao'
+[D][22:17:28]Eagerly caching bean 'userDao' to allow for resolving potential circular references
+[D][22:17:28]Returning cached instance of singleton bean 'sqlSessionFactory'
+[D][22:17:28]Invoking afterPropertiesSet() on bean with name 'userDao'
+[D][22:17:28]Finished creating instance of bean 'userDao'
+[D][22:17:28]Returning cached instance of singleton bean 'friendDao'
+[D][22:17:28]Autowiring by type from bean name 'friendServiceImpl' to bean named 'friendDao'
+[D][22:17:28]Finished creating instance of bean 'friendServiceImpl'
+[D][22:17:28]Creating shared instance of singleton bean 'userServiceImpl'
+[D][22:17:28]Creating instance of bean 'userServiceImpl'
+[D][22:17:28]Registered injected element on class [com.netty.service.impl.UserServiceImpl]: AutowiredFieldElement for public com.netty.dao.UserDao com.netty.service.impl.UserServiceImpl.userDao
+[D][22:17:28]Registered injected element on class [com.netty.service.impl.UserServiceImpl]: AutowiredFieldElement for public com.netty.dao.FriendDao com.netty.service.impl.UserServiceImpl.friendDao
+[D][22:17:28]Eagerly caching bean 'userServiceImpl' to allow for resolving potential circular references
+[D][22:17:28]Processing injected method of bean 'userServiceImpl': AutowiredFieldElement for public com.netty.dao.UserDao com.netty.service.impl.UserServiceImpl.userDao
+[D][22:17:28]Returning cached instance of singleton bean 'userDao'
+[D][22:17:28]Autowiring by type from bean name 'userServiceImpl' to bean named 'userDao'
+[D][22:17:28]Processing injected method of bean 'userServiceImpl': AutowiredFieldElement for public com.netty.dao.FriendDao com.netty.service.impl.UserServiceImpl.friendDao
+[D][22:17:28]Returning cached instance of singleton bean 'friendDao'
+[D][22:17:28]Autowiring by type from bean name 'userServiceImpl' to bean named 'friendDao'
+[D][22:17:28]Finished creating instance of bean 'userServiceImpl'
+[D][22:17:28]Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'propertyConfigurer'
+[D][22:17:28]Returning cached instance of singleton bean 'dataSource'
+[D][22:17:28]Returning cached instance of singleton bean 'sqlSessionFactory'
+[D][22:17:28]Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+[D][22:17:28]Creating shared instance of singleton bean 'transactionManager'
+[D][22:17:28]Creating instance of bean 'transactionManager'
+[D][22:17:28]Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+[D][22:17:28]Returning cached instance of singleton bean 'dataSource'
+[D][22:17:28]Invoking afterPropertiesSet() on bean with name 'transactionManager'
+[D][22:17:28]Finished creating instance of bean 'transactionManager'
+[D][22:17:28]Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'friendDao'
+[D][22:17:28]Returning cached instance of singleton bean 'userDao'
+[D][22:17:28]Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@ca66933]
+[D][22:17:28]Returning cached instance of singleton bean 'lifecycleProcessor'
+[D][22:17:28]Returning cached instance of singleton bean 'sqlSessionFactory'
+[D][22:17:28]Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+[D][22:17:28]Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+[D][22:17:28]Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+[D][22:17:28]Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+[D][22:17:28]Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial
+[D][22:17:28]Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+[D][22:17:28]JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial. Returning null.
+[D][22:17:28]Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+[D][22:17:28]Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+[D][22:17:28]Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+[D][22:17:28]Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[D][22:17:28]Root WebApplicationContext: initialization completed in 3362 ms
+[D][22:17:28]Adding [servletConfigInitParams] PropertySource with lowest search precedence
+[D][22:17:28]Adding [servletContextInitParams] PropertySource with lowest search precedence
+[D][22:17:28]Adding [jndiProperties] PropertySource with lowest search precedence
+[D][22:17:28]Adding [systemProperties] PropertySource with lowest search precedence
+[D][22:17:28]Adding [systemEnvironment] PropertySource with lowest search precedence
+[D][22:17:28]Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+[D][22:17:28]Initializing filter 'characterEncodingFilter'
+[D][22:17:28]Filter 'characterEncodingFilter' configured successfully
+[D][22:17:28]Using Log4J as the default logging framework
+[D][22:17:28]-Dio.netty.eventLoopThreads: 4
+[D][22:17:29]-Dio.netty.noKeySetOptimization: false
+[D][22:17:29]-Dio.netty.selectorAutoRebuildThreshold: 512
+[D][22:17:29]-Dio.netty.machineId: 00:26:82:5d:48:98:00:00 (auto-detected)
+[D][22:17:29]-Dio.netty.processId: 204 (auto-detected)
+[D][22:17:30]-Dio.netty.initialSeedUniquifier: 0x20bbcc294b5ff490
+[D][22:17:30]-Dio.netty.threadLocalDirectBufferSize: 65536
+[D][22:17:30]Platform: Windows
+[D][22:17:30]Java version: 8
+[D][22:17:30]-Dio.netty.noUnsafe: false
+[D][22:17:30]java.nio.ByteBuffer.cleaner: available
+[D][22:17:30]java.nio.Buffer.address: available
+[D][22:17:30]sun.misc.Unsafe.theUnsafe: available
+[D][22:17:30]sun.misc.Unsafe.copyMemory: available
+[D][22:17:30]java.nio.Bits.unaligned: true
+[D][22:17:30]sun.misc.Unsafe: available
+[D][22:17:30]-Dio.netty.noJavassist: false
+[D][22:17:30]Javassist: unavailable
+[D][22:17:30]You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
+[D][22:17:30]-Dio.netty.noPreferDirect: false
+[D][22:17:30]Loopback interface: Software Loopback Interface 1
+[D][22:17:30]Loopback address: /127.0.0.1 (primary)
+[D][22:17:30]Loopback address: /0:0:0:0:0:0:0:1
+[D][22:17:44]-Dio.netty.leakDetectionLevel: simple
+[D][22:17:45][id: 0x6c1b15e3, /127.0.0.1:53909 => /127.0.0.1:8089] WS Version V13 server handshake
+[D][22:17:45]WS Version 13 Server Handshake key: lRw5Ha03PY67dBkU6fTMPg==. Response: U9YLkZ4gBJlllfiUGmkZYEHwKiQ=.
+[D][22:17:55]Decoding WebSocket Frame opCode=8
+[D][22:17:55]Decoding WebSocket Frame length=2
+[D][22:17:55]Encoding WebSocket Frame opCode=8 length=2
+[D][22:17:56][id: 0x1586ba98, /127.0.0.1:53912 => /127.0.0.1:8089] WS Version V13 server handshake
+[D][22:17:56]WS Version 13 Server Handshake key: a5tCD+ocsgMtwkTSrDi8WA==. Response: 5cOpioC68MD9t1vYP5n58AQV3lw=.
+[D][22:18:17][id: 0x04b790e2, /127.0.0.1:53919 => /127.0.0.1:8089] WS Version V13 server handshake
+[D][22:18:17]WS Version 13 Server Handshake key: 4pbg6kYoXLMh96JcyRsRuA==. Response: 9Zi93hSl22eYQURDa4Dt0WUzY/M=.
+[D][22:18:42][id: 0x9b0c2394, /127.0.0.1:53926 => /127.0.0.1:8089] WS Version V13 server handshake
+[D][22:18:42]WS Version 13 Server Handshake key: kk62kEwjWsV0gi3OroHQZA==. Response: O5QIlRa/7vMR6bIw9ZwZI9cbS2c=.
+[D][22:18:46]Decoding WebSocket Frame opCode=8
+[D][22:18:46]Decoding WebSocket Frame length=2
+[D][22:18:46]Encoding WebSocket Frame opCode=8 length=2
+[D][22:18:46][id: 0x6fd56e17, /127.0.0.1:53931 => /127.0.0.1:8089] WS Version V13 server handshake
+[D][22:18:46]WS Version 13 Server Handshake key: pbP7Ug9yXw58UHJ/+8yBtQ==. Response: XtAcWiI5Eo2C+iQS0/huRx5E9Qo=.
+[D][22:19:26][id: 0xe9cdd24a, /127.0.0.1:53936 => /127.0.0.1:8089] WS Version V13 server handshake
+[D][22:19:26]WS Version 13 Server Handshake key: IhO7+aUgObmPzgtUswOJ2Q==. Response: suNUmOLJD5xx2+11Anr0yJZJZDs=.
+[D][22:19:32]Decoding WebSocket Frame opCode=1
+[D][22:19:32]Decoding WebSocket Frame length=46
+[D][22:19:32]Returning cached instance of singleton bean 'userServiceImpl'
+[D][22:19:38]Creating a new SqlSession
+[D][22:19:38]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d7bf0c] was not registered for synchronization because synchronization is not active
+[D][22:19:38]Fetching JDBC Connection from DataSource
+[D][22:19:39]JDBC Connection [jdbc:mysql://127.0.0.1:3306/chatApp?useUnicode=true&amp;characterEncoding=utf8, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+[D][22:19:39]==>  Preparing: select * from user where user_number= ? 
+[D][22:19:40]==> Parameters: 1(String)
+[D][22:19:40]<==      Total: 1
+[D][22:19:40]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@62d7bf0c]
+[D][22:19:40]Returning JDBC Connection to DataSource
+[D][22:19:40]Creating a new SqlSession
+[D][22:19:40]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675078d8] was not registered for synchronization because synchronization is not active
+[D][22:19:40]Fetching JDBC Connection from DataSource
+[D][22:19:40]JDBC Connection [jdbc:mysql://127.0.0.1:3306/chatApp?useUnicode=true&amp;characterEncoding=utf8, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+[D][22:19:40]==>  Preparing: select * from user where user_number= ? and user_password= ? 
+[D][22:19:40]==> Parameters: 1(String), 1(String)
+[D][22:19:40]<==      Total: 1
+[D][22:19:40]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675078d8]
+[D][22:19:40]Returning JDBC Connection to DataSource
+[D][22:19:40]Creating a new SqlSession
+[D][22:19:40]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d4c5755] was not registered for synchronization because synchronization is not active
+[D][22:19:40]Fetching JDBC Connection from DataSource
+[D][22:19:40]JDBC Connection [jdbc:mysql://127.0.0.1:3306/chatApp?useUnicode=true&amp;characterEncoding=utf8, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+[D][22:19:40]==>  Preparing: select * from user where user_number= ? and user_password= ? 
+[D][22:19:40]==> Parameters: 1(String), 1(String)
+[D][22:19:40]<==      Total: 1
+[D][22:19:40]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d4c5755]
+[D][22:19:40]Returning JDBC Connection to DataSource
+[D][22:19:40]Creating a new SqlSession
+[D][22:19:40]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f2c702d] was not registered for synchronization because synchronization is not active
+[D][22:19:40]Fetching JDBC Connection from DataSource
+[D][22:19:40]JDBC Connection [jdbc:mysql://127.0.0.1:3306/chatApp?useUnicode=true&amp;characterEncoding=utf8, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+[D][22:19:40]==>  Preparing: select * from friend where user_number= ? 
+[D][22:19:40]==> Parameters: 1(String)
+[D][22:19:40]<==      Total: 1
+[D][22:19:40]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f2c702d]
+[D][22:19:40]Returning JDBC Connection to DataSource
+[D][22:19:40]Creating a new SqlSession
+[D][22:19:40]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@689bbb01] was not registered for synchronization because synchronization is not active
+[D][22:19:40]Fetching JDBC Connection from DataSource
+[D][22:19:40]JDBC Connection [jdbc:mysql://127.0.0.1:3306/chatApp?useUnicode=true&amp;characterEncoding=utf8, UserName=root@localhost, MySQL Connector Java] will not be managed by Spring
+[D][22:19:40]==>  Preparing: select * from user where user_number= ? 
+[D][22:19:40]==> Parameters: 1(String)
+[D][22:19:40]<==      Total: 1
+[D][22:19:40]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@689bbb01]
+[D][22:19:40]Returning JDBC Connection to DataSource
+[D][22:19:48]Encoding WebSocket Frame opCode=1 length=410

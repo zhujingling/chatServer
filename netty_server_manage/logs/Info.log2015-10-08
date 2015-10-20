@@ -1,0 +1,10 @@
+[I][22:10:35]Root WebApplicationContext: initialization started
+[I][22:10:36]Refreshing Root WebApplicationContext: startup date [Thu Oct 08 22:10:36 CST 2015]; root of context hierarchy
+[I][22:10:36]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[I][22:10:38]Loading properties file from class path resource [db.properties]
+[I][22:10:40]Root WebApplicationContext: initialization completed in 4130 ms
+[I][22:15:21]Root WebApplicationContext: initialization started
+[I][22:15:21]Refreshing Root WebApplicationContext: startup date [Thu Oct 08 22:15:21 CST 2015]; root of context hierarchy
+[I][22:15:21]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[I][22:15:23]Loading properties file from class path resource [db.properties]
+[I][22:15:25]Root WebApplicationContext: initialization completed in 3985 ms

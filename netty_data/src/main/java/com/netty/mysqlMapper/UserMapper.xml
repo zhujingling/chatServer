@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值需要设置为和dao层的类相对应 -->
+<mapper namespace="com.netty.dao.UserDao">
+	<resultMap type="com.netty.entity.User" id="userResultMap">
+		<result property="user_pk" column="user_pk" />
+		<result property="user_number" column="user_number" />
+		<result property="user_password" column="user_password" />
+		<result property="user_sex" column="user_sex" />
+		<result property="user_birthday" column="user_birthday" />
+		<result property="user_createtime" column="user_createtime" />
+		<result property="user_phone" column="user_phone" />
+		<result property="user_email" column="user_email" />
+	</resultMap>
+
+	<select id="getUser" parameterType="String" resultType="com.netty.entity.User">
+		select
+		* from user where user_number= #{user_number}
+	</select>
+	
+	<select id="checkUser" parameterType="String" resultType="com.netty.entity.User">
+		select
+		* from user where user_number= #{user_number}
+	</select>
+
+	<select id="checkPwd" parameterType="String" resultType="com.netty.entity.User">
+		select *
+		from user where user_number= #{user_number} and user_password=
+		#{user_password}
+	</select>
+
+	<select id="login" parameterType="String" resultType="com.netty.entity.User">
+		select *
+		from user where user_number= #{user_number} and user_password=
+		#{user_password}
+	</select>
+</mapper>
