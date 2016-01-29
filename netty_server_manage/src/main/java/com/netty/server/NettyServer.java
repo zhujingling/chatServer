@@ -2,6 +2,7 @@ package com.netty.server;
 
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.AdaptiveRecvByteBufAllocator;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -22,6 +23,7 @@ public class NettyServer {
 							.channel(NioServerSocketChannel.class)
 							.childHandler(new NettyServerInitializer())
 							.option(ChannelOption.SO_BACKLOG, 128)
+							.childOption(ChannelOption.RCVBUF_ALLOCATOR, new AdaptiveRecvByteBufAllocator(64, 1024, 65536))
 							.childOption(ChannelOption.SO_KEEPALIVE, true);
 
 					ChannelFuture f = b.bind(8089).sync();

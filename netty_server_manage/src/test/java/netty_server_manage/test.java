@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.junit.Test;
 
 import com.netty.executer.JobWork;
+import com.netty.parser.PkgParser;
 import com.netty.pkg.Pkg;
 import com.netty.service.UserService;
 import com.netty.util.PathUtil;
@@ -39,11 +40,10 @@ public class test {
 	
 	@Test
 	public void testReadXml() throws Exception {
-		JobWork jobWork=new JobWork();
-		Pkg pkg=new Pkg();
-		pkg.cmd=0x00A40001;
-		pkg.data="123";
-		jobWork.jobProcessor(null, pkg);
+//		JobWork jobWork=new JobWork();
+//		Pkg pkg=new Pkg();
+//		pkg.cmd=0x00A40001;
+//		jobWork.jobProcessor(null, pkg);
 	}
 	
 	@Test
@@ -75,5 +75,15 @@ public class test {
 	    e1.printStackTrace();  
 	   }  
 	   return s;  
-	}  
+	} 
+	
+	@Test
+	public void testPkgToByte() {
+		Pkg pkg=Pkg.rawPkg();
+    	pkg.cmd=0x00A40001;
+    	pkg.put("1");//用户名
+    	pkg.put("1");//密码
+    	
+    	byte[] byt=PkgParser.parsers(pkg);
+	}
 }

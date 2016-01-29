@@ -8,7 +8,7 @@ import com.netty.session.ISession;
 public class JobWork {
 	public String jobProcessor(ISession session,Pkg pkg) {
 		IProcessor processor;
-		processor = Processors.get(pkg.getCmd());
+		processor = Processors.get(pkg.cmd);
 		return processor.process(session, pkg);
 	}
 

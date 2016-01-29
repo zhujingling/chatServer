@@ -4,6 +4,7 @@
 <mapper namespace="com.netty.dao.FriendDao">
 	<resultMap type="com.netty.entity.Friend" id="friendResultMap">
 		<result property="user_pk" column="user_pk" />
+		<result property="friend_nickname" column="friend_nickname" />
 		<association property="user_number" javaType="com.netty.entity.User">
 			<result column="user_number" property="user_number" />
 		</association>

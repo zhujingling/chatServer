@@ -15,10 +15,8 @@ public class LoginProcess implements IProcessor {
 
 	public String process(ISession session, Pkg pkg) {
 		// TODO Auto-generated method stub
-		String json=new Gson().toJson(pkg.getData());
-		JSONObject jsonObject=new JSONObject(json);
-		String user_number=jsonObject.getString("user");
-		String user_password=jsonObject.getString("pwd");
+		String user_number=pkg.getStr(0);
+		String user_password=pkg.getStr(1);
 		return login(user_number,user_password);
 	}
 	

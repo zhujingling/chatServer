@@ -8,6 +8,7 @@ import com.netty.pkg.Pkg;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
@@ -82,7 +83,19 @@ public class NettyServerProxy {
 		String request = ((TextWebSocketFrame) frame).text();
 		Pkg pkg = null;
 		try {
-			pkg=new Gson().fromJson(request, Pkg.class);
+			System.out.println("服务器接收到客户端发来的"+request);
+			ctx.writeAndFlush(new TextWebSocketFrame(request));
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void handleWebSocketFrame(Channel ctx,
+			Pkg requestPkg) {
+		Pkg pkg=requestPkg;
+		try {
 			NettyServerRequestHandler.handlerMessage(ctx,pkg);
 		} catch (Exception e) {
 			// TODO: handle exception
