@@ -5,4 +5,10 @@
 		<package>com.netty.process.UCProcess.LoginProcess</package>
 		<desc>登录</desc>
 	</cmd>
+	
+	<cmd id="ucenter_chat">
+		<code>0x00A40005</code>
+		<package>com.netty.process.UCProcess.SendMessageProcess</package>
+		<desc>聊天</desc>
+	</cmd>
 </cmds>

@@ -1,9 +1,5 @@
 package com.netty.server;
 
-import java.util.List;
-import java.util.Map;
-
-import com.google.gson.Gson;
 import com.netty.pkg.Pkg;
 
 import io.netty.buffer.ByteBuf;
@@ -13,12 +9,8 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.DefaultFullHttpResponse;
-import io.netty.handler.codec.http.DefaultHttpResponse;
 import io.netty.handler.codec.http.FullHttpRequest;
 import io.netty.handler.codec.http.FullHttpResponse;
-import io.netty.handler.codec.http.HttpResponse;
-import io.netty.handler.codec.http.QueryStringDecoder;
-import io.netty.handler.codec.http.multipart.HttpPostRequestDecoder;
 import io.netty.handler.codec.http.websocketx.CloseWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.PingWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.PongWebSocketFrame;
@@ -29,7 +21,6 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerHandshakerFactory;
 import io.netty.util.CharsetUtil;
 import static io.netty.handler.codec.http.HttpHeaders.Names.*;
 import static io.netty.handler.codec.http.HttpHeaders.*;
-import static io.netty.handler.codec.http.HttpMethod.*;
 import static io.netty.handler.codec.http.HttpResponseStatus.*;
 import static io.netty.handler.codec.http.HttpVersion.*;
 
@@ -39,22 +30,26 @@ public class NettyServerProxy {
 	private static final String WEBSOCKET_PATH = "/websocket";
 	private static final String NEWLINE = "\r\n";
 
-	public static void httpHandleRequest(ChannelHandlerContext ctx, FullHttpRequest req) {
-		  // Handle a bad request.
-        if (!req.getDecoderResult().isSuccess()||(!"websocket".equals(req.headers().get("Upgrade")))) {
-            sendHttpResponse(ctx, req, new DefaultFullHttpResponse(HTTP_1_1, BAD_REQUEST));
-            return;
-        }
+	public static void httpHandleRequest(ChannelHandlerContext ctx,
+			FullHttpRequest req) {
+		// Handle a bad request.
+		if (!req.getDecoderResult().isSuccess()
+				|| (!"websocket".equals(req.headers().get("Upgrade")))) {
+			sendHttpResponse(ctx, req, new DefaultFullHttpResponse(HTTP_1_1,
+					BAD_REQUEST));
+			return;
+		}
 
-        // Handshake
-        WebSocketServerHandshakerFactory wsFactory = new WebSocketServerHandshakerFactory(
-                getWebSocketLocation(req), null, false);
-        handshaker = wsFactory.newHandshaker(req);
-        if (handshaker == null) {
-            WebSocketServerHandshakerFactory.sendUnsupportedWebSocketVersionResponse(ctx.channel());
-        } else {
-            handshaker.handshake(ctx.channel(), req);
-        }
+		// Handshake
+		WebSocketServerHandshakerFactory wsFactory = new WebSocketServerHandshakerFactory(
+				getWebSocketLocation(req), null, false);
+		handshaker = wsFactory.newHandshaker(req);
+		if (handshaker == null) {
+			WebSocketServerHandshakerFactory
+					.sendUnsupportedWebSocketVersionResponse(ctx.channel());
+		} else {
+			handshaker.handshake(ctx.channel(), req);
+		}
 	}
 
 	public static void handleWebSocketFrame(ChannelHandlerContext ctx,
@@ -66,14 +61,14 @@ public class NettyServerProxy {
 					(CloseWebSocketFrame) frame.retain());
 			return;
 		}
-		//判断是否是ping消息
+		// 判断是否是ping消息
 		if (frame instanceof PingWebSocketFrame) {
 			ctx.channel().write(
 					new PongWebSocketFrame(frame.content().retain()));
 			return;
 		}
-		//表示只是支持文本消息，不支持二进制
-		//TODO:
+		// 表示只是支持文本消息，不支持二进制
+		// TODO:
 		if (!(frame instanceof TextWebSocketFrame)) {
 			throw new UnsupportedOperationException(String.format(
 					"%s frame types not supported", frame.getClass().getName()));
@@ -83,25 +78,23 @@ public class NettyServerProxy {
 		String request = ((TextWebSocketFrame) frame).text();
 		Pkg pkg = null;
 		try {
-			System.out.println("服务器接收到客户端发来的"+request);
+			System.out.println("服务器接收到客户端发来的" + request);
 			ctx.writeAndFlush(new TextWebSocketFrame(request));
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
+
 	}
-	
-	public static void handleWebSocketFrame(Channel ctx,
-			Pkg requestPkg) {
-		Pkg pkg=requestPkg;
+
+	public static void handleWebSocketFrame(Channel ctx, Pkg pkg) {
 		try {
-			NettyServerRequestHandler.handlerMessage(ctx,pkg);
+			NettyServerRequestHandler.handlerMessage(ctx, pkg);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public static void sendHttpResponse(ChannelHandlerContext ctx,
@@ -120,10 +113,10 @@ public class NettyServerProxy {
 		if (!isKeepAlive(req) || res.getStatus().code() != 200) {
 			f.addListener(ChannelFutureListener.CLOSE);
 		}
-	}    
+	}
 
-    private static String getWebSocketLocation(FullHttpRequest req) {
-        return "ws://" + req.headers().get(HOST) + WEBSOCKET_PATH;
-    }
+	private static String getWebSocketLocation(FullHttpRequest req) {
+		return "ws://" + req.headers().get(HOST) + WEBSOCKET_PATH;
+	}
 
 }
